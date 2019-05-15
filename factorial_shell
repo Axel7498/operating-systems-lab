@@ -1,0 +1,10 @@
+#!/bin/bash
+fact=1
+#taking input from user
+echo -e "enter a number"
+read n
+for((i=$n;i>=1;i--))
+do
+fact=`expr $fact \* $i`
+done
+echo "The factorial of $n is $fact"
