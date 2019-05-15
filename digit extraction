@@ -1,0 +1,13 @@
+sum of digits
+
+#!/bin/bash
+echo "enter a number"
+read n
+s=0
+while [ "$n" -gt 0 ]
+do
+	d=`expr "$n % 10" | bc`
+	s=$(($s + $d))
+	n=`expr "$n / 10" | bc`
+done
+echo "the sum of digits is : $s"
