@@ -1,0 +1,19 @@
+#!/bin/bash
+echo "enter a year"
+read y
+if [ `expr $y % 4` -eq 0 ] 
+then
+	if [ `expr $y % 100` -eq 0 ] 
+	then
+		if [ `expr $y % 400` -eq 0 ] 
+		then
+			echo "this is a leap year"
+		else
+			echo "this is  not a leap year"
+		fi
+	else
+		echo "this is a leap year"
+	fi
+else
+	echo "this is not a leap year"
+fi
