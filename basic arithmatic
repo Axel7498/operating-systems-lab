@@ -1,0 +1,16 @@
+#!/bin/bash
+# Take input from user and calculate sum.
+ 
+echo "enter the 1st and second number"
+read num1
+read num2
+ 
+sum=$(( $num1 + $num2 ))
+subs=$(( $num1 - $num2))
+mul=$(( $num1 * $num2))
+div=$(( $num1 / $num2))
+
+echo "Sum is: $sum"
+echo "substract is :$subs"
+echo "product is :$mul"
+echo "result is :$div"
